@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Background changer</h2>
+    <label class="switch">
+        <input type="checkbox" id="toggle">
+        <span class="slider"></span>
+    </label>
+    <p id="status">bg changer is OFF</p>
+
+    <div>
+        <label for="hexColor">Enter hex code:</label>
+        <input type="text" id="hexColor" placeholder="#fffff">
+        <button id="apply">Apply</button>
+    </div>
+
+    <div>
+        <p>Current color: <span id="currcolorText">Default</span></p>
+        <div id="currcolorBox" style="width:50px; height:50px"></div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

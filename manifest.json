@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+  "name": "multitool",
+  "version": "1.0",
+  "description": "multitool chrome extension: ",
+  "permissions": ["scripting", "storage", "tabs"],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "64": "images/icon64.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
